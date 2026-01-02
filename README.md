@@ -1,4 +1,4 @@
-# 🎓 Class Monitor CLI
+# Class Monitor CLI
 
 > A high-performance Command Line Interface (CLI) tool built with **Go (Golang)** to manage student attendance and records efficiently.
 
@@ -13,7 +13,7 @@ This project is part of my journey into **Cloud Native Engineering**. It starts 
 - ** fast Lookups:** Uses `Maps` (Hash Tables) for O(1) data retrieval.
 - **Error Handling:** Gracefully handles non-existent records (The "Ghost Student" check).
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Language:** Go (Golang)
 - **Concepts:** Structs, Maps, Pointers, Slices
 
