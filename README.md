@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Active_Development-green?style=for-the-badge)
 
 ##  About The Project
-This project is part of my journey into **Cloud Native Engineering**. It starts as a simple CLI tool to manage student data using in-memory data structures but will evolve into a containerized application orchestrated by Kubernetes.
+This project starts as a simple CLI tool to manage student data using in-memory data structures but will evolve into a containerized application orchestrated by Kubernetes.
 
 **Current Features:**
 - **Struct-based Data Modeling:** Clean architecture for student data.
