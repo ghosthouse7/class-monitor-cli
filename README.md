@@ -1,6 +1,6 @@
 # Class Monitor CLI
 
->A high-performance Command Line Interface (CLI) tool built with **Go (Golang)** to manage student attendance and records efficiently.<
+>A high-performance Command Line Interface (CLI) tool built with **Go (Golang)** to manage student attendance and records efficiently.
 
 ![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active_Development-green?style=for-the-badge)
