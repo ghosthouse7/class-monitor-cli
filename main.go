@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"encoding/json"
+	"net/http"
+)
 
 type Student struct {
 	Name       string
@@ -8,16 +11,23 @@ type Student struct {
 	Attendance int
 }
 
-func main() {
+var classData = make(map[int]Student)
 
-	classData := make(map[int]Student)
+func init() {
 
-	// Adding data
 	classData[27] = Student{Name: "Ghost", IsNaughty: true, Attendance: 85}
 	classData[1] = Student{Name: "Topper", IsNaughty: false, Attendance: 95}
 	classData[50] = Student{Name: "LastBencher", IsNaughty: true, Attendance: 40}
+}
 
-	fmt.Println("THE GHOST STUDENT DATA:", classData[27].Name, classData[27].IsNaughty, classData[27].Attendance)
-	fmt.Println("THE TOPPER STUDENT DATA:", classData[1].Name, classData[1].IsNaughty, classData[1].Attendance)
-	fmt.Println("THE LAST BENCHER STUDENT DATA:", classData[50].Name, classData[50].IsNaughty, classData[50].Attendance)
+func getsStudents(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(classData)
+}
+
+func main() {
+	http.HandleFunc("/students", getsStudents)
+
+	println("Server starting on localhost:8080...")
+	http.ListenAndServe(":8080", nil)
 }
