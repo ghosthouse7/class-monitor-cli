@@ -1,24 +1,47 @@
-# Class Monitor CLI
+# 🎓 Class Monitor API
 
->A high-performance Command Line Interface (CLI) tool built with **Go (Golang)** to manage student attendance and records efficiently.
+![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active_Development-green?style=for-the-badge)
+A lightweight **REST API** built with Golang to manage student attendance and behavior data. Originally a CLI tool, now upgraded to a web microservice.
 
-##  About The Project
-This project starts as a simple CLI tool to manage student data using in-memory data structures but will evolve into a containerized application orchestrated by Kubernetes.
+## 🚀 Features
 
-**Current Features:**
-- **Struct-based Data Modeling:** Clean architecture for student data.
-- ** fast Lookups:** Uses `Maps` (Hash Tables) for O(1) data retrieval.
-- **Error Handling:** Gracefully handles non-existent records (The "Ghost Student" check).
+* **RESTful Architecture**: Serves data over HTTP.
+* **JSON Response**: Standard data format for web integration.
+* **In-Memory Database**: Fast data retrieval using Go Maps.
+* **Concurrency Ready**: Built on Go's robust `net/http` package.
 
-## Tech Stack
-- **Language:** Go (Golang)
-- **Concepts:** Structs, Maps, Pointers, Slices
+## 🛠️ Tech Stack
 
-##  How to Run
+* **Language**: Go (Golang)
+* **Standard Libs**: `net/http`, `encoding/json`
 
-1. **Clone the repository**
-   ```bash
-   git clone [https://github.com/ghosthouse7/class-monitor-cli.git](https://github.com/ghosthouse7/class-monitor-cli.git)
+## 🏃‍♂️ How to Run
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/ghosthouse7/class-monitor-cli.git](https://github.com/ghosthouse7/class-monitor-cli.git)
+    cd class-monitor-cli
+    ```
+
+2.  **Start the Server**
+    ```bash
+    go run main.go
+    ```
+    *You will see: `Server starting on localhost:8080...`*
+
+3.  **Test the API**
+    Open your browser or Postman and visit:
+    ```
+    http://localhost:8080/students
+    ```
+
+## 🔌 API Endpoints
+
+| Method | Endpoint    | Description             |
+| :----- | :---------- | :---------------------- |
+| `GET`  | `/students` | Fetch all students JSON |
+
+---
+*Built with ❤️ by ghosthouse*
