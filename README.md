@@ -44,4 +44,4 @@ A lightweight **REST API** built with Golang to manage student attendance and be
 | `GET`  | `/students` | Fetch all students JSON |
 
 ---
-*Built with ❤️ by ghosthouse*
+*Built with ❤️ by ghost_hunter*
