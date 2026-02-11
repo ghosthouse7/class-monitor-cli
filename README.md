@@ -17,7 +17,7 @@ A lightweight **REST API** built with Golang to manage student attendance and be
 * **Language**: Go (Golang)
 * **Standard Libs**: `net/http`, `encoding/json`
 
-## 🏃‍♂️ How to Run
+## 🏃‍♂️ How to Run?
 
 1.  **Clone the repository**
     ```bash
