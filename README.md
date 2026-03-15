@@ -1,4 +1,5 @@
-# 🎓 Class Monitor API
+# 🎓 Class Monitor API 
+
 
 ![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)
 ![License](https://img.shields.io/badge/License-MIT-green)
