@@ -1,4 +1,4 @@
-# 🎓 Class Monitor API (WILL SOON BE UPDATED)
+# 🎓 Class Monitor API (WILL SOON BE UPDATED [UNDER WORK])
 
 
 ![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)
