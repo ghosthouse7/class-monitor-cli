@@ -6,7 +6,7 @@
 
 A lightweight **REST API** built with Golang to manage student attendance and behavior data. Originally a CLI tool, now upgraded to a web microservice.
 
-## 🚀 Features
+## 🚀 Features:
 
 * **RESTful Architecture**: Serves data over HTTP.
 * **JSON Response**: Standard data format for web integration.
